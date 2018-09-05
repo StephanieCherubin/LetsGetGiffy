@@ -44,6 +44,7 @@ app.get('/', function (req, res) {
   app.get('/', function (req, res) {
     giphy.search(req.query.term, function (err, response) {
       res.render('home', {gifs: response.data})
+      debugger
     });
   });
 
