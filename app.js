@@ -5,7 +5,6 @@ var http = require('http');
 var giphy = require('giphy-api')();
 
 
-
 app.use(express.static('public'));
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
@@ -29,8 +28,6 @@ app.get('/', function (req, res) {
         body += d;
       });
 
-
-
     response.on('end', function() {
       var parsed = JSON.parse(body);
       res.render('home', {gifs: parsed.data})
@@ -44,7 +41,6 @@ app.get('/', function (req, res) {
     });
   });
 
-
   app.get('/', function (req, res) {
     giphy.search(req.query.term, function (err, response) {
       res.render('home', {gifs: response.data})
@@ -56,14 +52,10 @@ app.get('/greetings/:name', function (req, res){
   res.render('greetings', {name: name});
 })
 
-
 app.get('/hello-gif', function (req, res) {
   var gifUrl = 'http://media2.giphy.com/media/gYBVM1igrlzH2/giphy.gif'
   res.render('hello-gif', {gifUrl: gifUrl})
-
-
 })
-
 
 app.listen(3000, function() {
   console.log('Gif Search listening on port localhost:3000!');
