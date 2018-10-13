@@ -3,6 +3,8 @@ var app = express();
 var exphbs = require('express-handlebars');
 var http = require('http');
 var giphy = require('giphy-api')();
+var mongoose = require('mongoose');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/rotten-potatoes');
 
 
 app.use(express.static('public'));
@@ -58,6 +60,9 @@ app.get('/hello-gif', function (req, res) {
   res.render('hello-gif', {gifUrl: gifUrl})
 })
 
-app.listen(3000, function() {
-  console.log('Gif Search listening on port localhost:3000!');
-});
+const port = process.env.PORT || 3000;
+app.listen(port);
+
+// app.listen(3000, function() {
+//   console.log('Gif Search listening on port localhost:3000!');
+// });
