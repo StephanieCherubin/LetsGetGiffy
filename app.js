@@ -4,7 +4,7 @@ var exphbs = require('express-handlebars');
 var http = require('http');
 var giphy = require('giphy-api')();
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/rotten-potatoes');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/LetsGetGiffy');
 
 
 app.use(express.static('public'));
