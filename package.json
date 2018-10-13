@@ -4,13 +4,14 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "giphy-api": "^1.2.7"
+    "giphy-api": "^1.2.7",
+    "mongoose": "^5.3.3"
   }
 }
