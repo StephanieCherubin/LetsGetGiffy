@@ -5,7 +5,8 @@ var http = require('http');
 var giphy = require('giphy-api')();
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/LetsGetGiffy');
-
+const port = process.env.PORT || 3000;
+app.listen(port);
 
 app.use(express.static('public'));
 
@@ -59,10 +60,3 @@ app.get('/hello-gif', function (req, res) {
   var gifUrl = 'http://media2.giphy.com/media/gYBVM1igrlzH2/giphy.gif'
   res.render('hello-gif', {gifUrl: gifUrl})
 })
-
-const port = process.env.PORT || 3000;
-app.listen(port);
-
-// app.listen(3000, function() {
-//   console.log('Gif Search listening on port localhost:3000!');
-// });
