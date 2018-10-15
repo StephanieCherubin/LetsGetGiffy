@@ -4,7 +4,7 @@ var exphbs = require('express-handlebars');
 var http = require('http');
 var giphy = require('giphy-api')();
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/LetsGetGiffy');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/giph-search');
 const port = process.env.PORT || 3000;
 app.listen(port);
 
