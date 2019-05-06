@@ -13,8 +13,8 @@
     "express-handlebars": "^3.0.0",
     "giphy-api": "^1.2.7",
     "mongoose": "^5.3.3"
-},
+    },
   "engines": {
-      "node": "8.11.4"
+      "node": "8.11.1"
   }
 }

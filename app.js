@@ -1,14 +1,16 @@
 var express = require('express');
 var app = express();
-var exphbs = require('express-handlebars');
 var http = require('http');
 var giphy = require('giphy-api')();
 var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/lets-get-giffy');
+
 const port = process.env.PORT || 3000;
 app.listen(port);
 
 app.use(express.static('public'));
+
+var exphbs = require('express-handlebars');
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
