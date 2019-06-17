@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "tsc": "tsc"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "giphy-api": "^1.2.7",
     "global": "^4.3.2",
     "mongoose": "^5.3.3",
+    "tsc": "^1.20150623.0",
     "typescript": "^3.4.5"
   },
   "engines": {
