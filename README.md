@@ -3,17 +3,6 @@ A search engine of gifs
 For the live version, click [here](http://lets-get-giffy.herokuapp.com).
 
 ![letsgetgiffy](https://user-images.githubusercontent.com/26418542/68346046-f220dd80-00a7-11ea-92d3-a4f4914e2b3f.gif)
-
-## Goals
-### Short term goals
-- [ ] Goal 1
-- [ ] Goal 2
-- [ ] Goal 3
-​
-### Long term goals
-- [ ] Goal 1
-- [ ] Goal 2
-- [ ] Goal 3
 ​
 ## How to run/setup/deploy
 You would need [Node.js](https://nodejs.org) to install and run scripts.
