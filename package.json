@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.22.1",
+    "express": "^4.22.2",
     "express-handlebars": "^8.0.6",
     "giphy-api": "^2.0.1",
     "global": "^4.4.0",
